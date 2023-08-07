@@ -1,4 +1,5 @@
 "use client";
+import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import React, { useEffect, useState } from "react";
 import {
   Card,
@@ -26,6 +27,11 @@ const HomePage = () => {
 
   return (
     <div>
+      <ProgressBar
+        height="2px"
+        color="#fffd00"
+        options={{ showSpinner: false }}
+      />
       <h1 className="container mx-auto text-4xl text-center font-semibold bg-gradient-to-r from-yellow-900 to-gray-700 bg-clip-text text-transparent">
         this is home HomePage
       </h1>
